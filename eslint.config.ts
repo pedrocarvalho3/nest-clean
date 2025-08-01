@@ -10,7 +10,7 @@ export default tseslint.config({
   extends: [...tseslint.configs.recommended, eslintConfigPrettier],
   rules: {
     "prettier/prettier": ["error", { endOfLine: "auto" }],
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-explicit-any": "off",
+    // "@typescript-eslint/explicit-module-boundary-types": "off",
+    // "@typescript-eslint/no-explicit-any": "off",
   },
 });
