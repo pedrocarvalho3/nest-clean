@@ -9,6 +9,7 @@ import { DatabaseModule } from "../database/database.module";
 import { FetchRecentQuestionsUseCase } from "@/domain/forum/application/use-cases/fetch-recent-questions";
 import { AuthenticateStudentUseCase } from "@/domain/forum/application/use-cases/authenticate-student";
 import { CryptographyModule } from "../cryptography/cryptography.module";
+import { RegisterStudentUseCase } from "@/domain/forum/application/use-cases/register-student";
 
 @Module({
   imports: [DatabaseModule, CryptographyModule],
@@ -19,6 +20,7 @@ import { CryptographyModule } from "../cryptography/cryptography.module";
     FetchRecentQuestionsController,
   ],
   providers: [
+    RegisterStudentUseCase,
     AuthenticateStudentUseCase,
     CreateQuestionUseCase,
     FetchRecentQuestionsUseCase,
