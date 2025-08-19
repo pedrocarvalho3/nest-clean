@@ -47,3 +47,15 @@ Authorization: Bearer {{authToken}}
 GET {{baseUrl}}/questions/nova-perguntas
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
+
+###
+
+# @name edit_question
+PUT {{baseUrl}}/questions/a6a228d4-bcf5-49d7-a678-635948f747de
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "title": "Novas perguntas",
+  "content": "Teste"
+}
